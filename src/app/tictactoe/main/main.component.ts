@@ -17,7 +17,6 @@ export class MainComponent implements OnInit {
 
   translate(lang: string) {
     this.translateService.use(lang);
-    console.log(lang);
   }
 
 }
