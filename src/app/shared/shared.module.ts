@@ -16,6 +16,7 @@ import {HttpLoaderFactory} from '../app.module';
     ReactiveFormsModule,
     RouterModule,
     FlexLayoutModule,
+    MaterialModule,
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,
@@ -29,6 +30,7 @@ import {HttpLoaderFactory} from '../app.module';
     ReactiveFormsModule,
     RouterModule,
     FlexLayoutModule,
+    MaterialModule,
     TranslateModule,
   ]
 })
