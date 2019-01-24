@@ -1,3 +1,13 @@
 <div translate>HELLO</div>
-<button mat-raised-button color="primary" class="mr-1" (click)="translate('en')"><span translate>LANGUAGES.ENGLISH</span></button>
-<button mat-raised-button color="primary" class="ml-1" (click)="translate('es')"><span translate>LANGUAGES.SPANISH</span></button>
+<div fxLayout="column" fxLayoutGap="1rem">
+  <div fxLayout="row" fxLayoutGap="1.5rem">
+    <button mat-raised-button color="primary" (click)="translate('en')"><span translate>LANGUAGES.ENGLISH</span></button>
+    <button mat-raised-button color="primary" (click)="translate('es')"><span translate>LANGUAGES.SPANISH</span></button>
+  </div>
+
+  <mat-chip-list class="mat-chip-list-stacked">
+    <mat-chip *ngFor="let player of players" selected [color]="player.color">
+      {{player.name}}
+    </mat-chip>
+  </mat-chip-list>
+</div>
