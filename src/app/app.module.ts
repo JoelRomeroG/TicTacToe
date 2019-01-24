@@ -7,6 +7,12 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {NavComponent} from './nav/nav.component';
 import {LayoutModule} from '@angular/cdk/layout';
 import {MaterialModule} from './material/material.module';
+import {HttpClient} from '@angular/common/http';
+import {TranslateHttpLoader} from '@ngx-translate/http-loader';
+
+export function HttpLoaderFactory(http: HttpClient) {
+  return new TranslateHttpLoader(http);
+}
 
 @NgModule({
   declarations: [
@@ -23,5 +29,6 @@ import {MaterialModule} from './material/material.module';
   providers: [],
   bootstrap: [AppComponent]
 })
+
 export class AppModule {
 }
