@@ -11,14 +11,12 @@ import {FlexLayoutModule} from '@angular/flex-layout';
     CommonModule,
     FormsModule,
     ReactiveFormsModule,
-    MaterialModule,
     RouterModule,
     FlexLayoutModule,
   ],
   exports: [
     FormsModule,
     ReactiveFormsModule,
-    MaterialModule,
     RouterModule,
     FlexLayoutModule,
   ]
